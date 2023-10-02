@@ -141,3 +141,19 @@ main {
         width: calc(95% / 2);
     }  
 }
+
+/* Testimonials Section */
+#testimonials {
+    padding: 4rem 0;
+    text-align: center;
+}
+
+#testimonials .col {
+    background-color: var(--bg-color);
+    /* Debug */
+    min-height: 200px;
+}
+
+#testimonials .col:first-child {
+    background-color: white;
+}
