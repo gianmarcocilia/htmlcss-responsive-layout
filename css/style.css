@@ -212,3 +212,11 @@ main {
     /* Debug */
     min-height: 500px;
 }
+
+/* FOOTER */
+footer {
+    padding: 3rem 0;
+    background-color: black;
+    text-align: center;
+    color: white;
+}
