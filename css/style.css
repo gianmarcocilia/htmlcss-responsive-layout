@@ -183,7 +183,7 @@ main {
 
     #download-app .content-img {
         align-self: end;
-    }  
+    }
 }
 
 /* Planning Section */
@@ -193,18 +193,38 @@ main {
     color: white;
 }
 
-#planning .col {
-    /* Debug */
-    min-height: 500px;
+#planning h2 {
+    padding-top: 3rem;
+    font-size: 2rem;
+}
+
+#planning p {
+    padding: 2em 0;
+    line-height: 1.5em;
 }
 
 #planning .col:last-child {
     background-color: white;
     color: black;
     text-align: center;
+    padding: 1em;
+}
+
+#planning .arrow {
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    line-height: 50px;
+    background-color: var(--bg-color);
+    border-radius: 50%;
+    font-size: 25px;
 }
 
 @media screen and (min-width: 992px) {
+    #planning .container {
+        width: 50%;
+    }
+
     #planning .row {
         flex-direction: row;
         justify-content: space-between;
@@ -212,6 +232,15 @@ main {
 
     #planning .col {
         width: calc(95% / 2);
+    }
+
+    #planning .col:last-child {
+        align-self: end;
+    }
+
+    #planning .col:last-child img {
+        width: 50%;
+        margin: 0 auto;
     }
 }
 
