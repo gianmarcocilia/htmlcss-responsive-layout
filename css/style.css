@@ -3,7 +3,8 @@
     --header-height: 80px;
     --blu-color: rgb(0 132 253);
     --lightblu-color: rgb(181 221 255);
-    --bg-color:rgb(151 146 228);
+    --bg-color: rgb(151 146 228);
+    --demo-card: rgb(90 110 127);
 }
 
 /* RESET */
@@ -15,6 +16,7 @@
 
 img {
     max-width: 100%;
+    display: block;
 }
 
 /* BODY */
@@ -35,7 +37,12 @@ a {
 
 .btn {
     padding: .5em 1em;
-    border-radius: 20px;
+    border-radius: 2em;
+    display: block;
+}
+
+.text-center {
+    text-align: center;
 }
 
 /* HEADER */
@@ -72,6 +79,7 @@ header {
 
 .nav-link {
     display: flex;
+    align-items: center;
     list-style-type: none;
     gap: 1rem;
 }
@@ -106,15 +114,43 @@ main {
     gap: 2rem;
 }
 
+.col {
+    border-radius: 2rem;
+}
+
 /* Section download app */
 #download-app {
     padding-bottom: 4rem;
+    font-weight: 600;
 }
 
 #download-app .col {
     background-color: var(--lightblu-color);
-    /* Debug */
-    min-height: 300px;
+    padding: 2rem 2rem 0;
+}
+
+#download-app .col h3 {
+    color: var(--blu-color);
+    font-size: 1.5rem;
+}
+
+#download-app .content p {
+    padding: 2rem 0;
+    color: var(--demo-card);
+}
+
+#download-app .btn {
+    background-color: var(--blu-color);
+    color: white;
+    padding: .5em 3em;
+    letter-spacing: .3em;
+    width: fit-content;
+    margin-bottom: 2em;
+}
+
+.icon-download {
+    color: var(--blu-color);
+    font-size: 5rem;
 }
 
 @media screen and (min-width: 768px) {
@@ -130,7 +166,24 @@ main {
     #download-app .col:first-child {
         width: calc(100% - (100% / 3) - (2rem / 3));
     }
-    
+
+    #download-app .content-img {
+        width: 75%;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    #download-app .col:first-child {
+        display: flex;
+    }
+
+    #download-app .col:first-child .content {
+        width: 100%;
+    }
+
+    #download-app .content-img {
+        align-self: end;
+    }  
 }
 
 /* Planning Section */
@@ -159,7 +212,7 @@ main {
 
     #planning .col {
         width: calc(95% / 2);
-    }  
+    }
 }
 
 /* Testimonials Section */
@@ -190,7 +243,7 @@ main {
     /* Debug */
     min-height: 300px;
 }
- 
+
 @media screen and (min-width: 768px) {
     #benefits .row {
         flex-direction: row;
@@ -205,7 +258,7 @@ main {
 @media screen and (min-width: 992px) {
     #benefits .col {
         width: calc(100% / 3 - (4rem /3));
-    }  
+    }
 }
 
 /* About us section */
