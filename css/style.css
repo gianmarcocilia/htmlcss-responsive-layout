@@ -3,6 +3,7 @@
     --header-height: 80px;
     --blu-color: rgb(0 132 253);
     --lightblu-color: rgb(181 221 255);
+    --bg-color:rgb(151 146 228);
 }
 
 /* RESET */
@@ -95,6 +96,10 @@ main {
 }
 
 /* Section download app */
+#download-app {
+    padding-bottom: 4rem;
+}
+
 #download-app .col {
     background-color: var(--lightblu-color);
     /* Debug */
@@ -102,7 +107,7 @@ main {
 }
 
 @media screen and (min-width: 768px) {
-    .row {
+    #download-app .row {
         flex-direction: row;
         flex-wrap: wrap;
     }
@@ -115,4 +120,20 @@ main {
         width: calc(100% - (100% / 3) - (2rem / 3));
     }
     
+}
+
+/* Planning Section */
+#planning {
+    background-color: var(--bg-color);
+    padding: 4rem 0;
+    color: white;
+}
+
+#planning .col {
+    /* Debug */
+    min-height: 500px;
+}
+
+#planning .col:last-child {
+    background-color: white;
 }
