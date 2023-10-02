@@ -2,6 +2,7 @@
 :root {
     --header-height: 80px;
     --blu-color: rgb(0 132 253);
+    --lightblu-color: rgb(181 221 255);
 }
 
 /* RESET */
@@ -22,7 +23,7 @@ body {
 
 /* COMMON */
 .container {
-    width: 100%;
+    width: 85%;
     margin: 0 auto;
 }
 
@@ -47,8 +48,12 @@ a {
 header {
     height: var(--header-height);
     background-color: var(--blu-color);
-    padding: 0 2rem;
     color: white;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 9999;
 }
 
 header section {
@@ -76,4 +81,22 @@ header section {
     .header-menu {
         display: none;
     }
+}
+
+/* MAIN */
+main {
+    padding-top: calc(var(--header-height) + 3rem);
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+/* Section download app */
+#download-app .col {
+    background-color: var(--lightblu-color);
+    /* Debug */
+    min-height: 300px;
 }
