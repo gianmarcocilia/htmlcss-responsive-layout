@@ -1,3 +1,9 @@
+/* CUSTOM PROPERTIES */
+:root {
+    --header-height: 80px;
+    --blu-color: rgb(0 132 253);
+}
+
 /* RESET */
 * {
     margin: 0;
@@ -12,4 +18,33 @@ img {
 /* BODY */
 body {
     font-family: 'PT Sans', sans-serif;
+}
+
+/* COMMON */
+.container {
+    width: 95%;
+    margin: 0 auto;
+}
+
+.flex {
+    display: flex;
+}
+
+.space-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+/* HEADER */
+header {
+    height: var(--header-height);
+    background-color: var(--blu-color);
+    padding: 0 2rem;
+}
+
+.header-nav {
+    display: none;
 }
