@@ -204,3 +204,11 @@ main {
     }
 }
 
+/* Get started section */
+#get-started {
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+    text-align: center;
+    /* Debug */
+    min-height: 500px;
+}
