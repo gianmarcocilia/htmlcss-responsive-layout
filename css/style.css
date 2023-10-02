@@ -157,3 +157,16 @@ main {
 #testimonials .col:first-child {
     background-color: white;
 }
+
+/* Benefits Section */
+#benefits {
+    background-color: var(--bg-color);
+    padding: 3rem 0;
+    text-align: center;
+}
+
+#benefits .col {
+    background-color: white;
+    /* Debug */
+    min-height: 300px;
+}
