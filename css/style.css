@@ -33,6 +33,11 @@ a {
     color: inherit;
 }
 
+.btn {
+    padding: .5em 1em;
+    border-radius: 20px;
+}
+
 /* HEADER */
 header {
     height: var(--header-height);
@@ -52,14 +57,28 @@ header {
     align-items: center;
 }
 
+.header-menu {
+    border: none;
+    background-color: transparent;
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
 .header-nav {
     display: none;
+    font-size: 1.2rem;
 }
 
 .nav-link {
     display: flex;
     list-style-type: none;
     gap: 1rem;
+}
+
+.nav-link .btn {
+    color: black;
+    background-color: white;
 }
 
 @media screen and (min-width: 992px) {
