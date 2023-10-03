@@ -53,6 +53,10 @@ a {
     padding: 3rem 0;
 }
 
+.quotate {
+    font-size: 2rem;
+}
+
 /* HEADER */
 header {
     height: var(--header-height);
@@ -254,7 +258,49 @@ main {
 }
 
 /* Testimonials Section */
-#testimonials {
+#testimonials .col-title span, 
+#testimonials p {
+    font-size: 1.3rem;
+}
+
+#testimonials h2 {
+    font-size: 2.5rem;
+    color: var(--bg-color);
+    padding: .5em 0;
+}
+
+#testimonials .col {
+    color: white;
+    padding: 2em 1em;
+}
+
+#testimonials img {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+#testimonials .col p {
+    padding: 1.5em 0;
+    line-height: 2rem;
+}
+
+#testimonials h3 {
+    font-size: 1.5rem;
+    letter-spacing: .2em;
+}
+
+@media screen and (min-width: 768px) {
+    #testimonials .col {
+        display: flex;
+        text-align: left;
+    }
+
+    #testimonials .col img {
+        margin-right: 25px;
+    }
     
 }
 
