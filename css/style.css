@@ -35,6 +35,10 @@ a {
     color: inherit;
 }
 
+.white {
+    color: white;
+}
+
 .btn {
     padding: .5em 1em;
     border-radius: 2em;
@@ -54,8 +58,16 @@ a {
     padding: 3rem 0;
 }
 
-.quotate {
-    font-size: 2rem;
+.circle-img {
+    margin: auto;
+    height: 200px;
+    width: 200px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.common-line-height {
+    line-height: 1.8em;
 }
 
 /* HEADER */
@@ -154,7 +166,6 @@ main {
 
 #download-app .btn {
     background-color: var(--blu-color);
-    color: white;
     padding: .5em 3em;
     letter-spacing: .3em;
     margin-bottom: 2em;
@@ -200,10 +211,6 @@ main {
 }
 
 /* Planning Section */
-#planning {
-    color: white;
-}
-
 #planning h2 {
     padding-top: 3rem;
     font-size: 2rem;
@@ -270,17 +277,8 @@ main {
 }
 
 #testimonials .col {
-    color: white;
     padding: 2em 1em;
     background-color: var(--bg-color);
-}
-
-#testimonials img {
-    margin: auto;
-    height: 200px;
-    width: 200px;
-    border-radius: 50%;
-    object-fit: cover;
 }
 
 #testimonials .col p {
@@ -306,7 +304,6 @@ main {
 
 /* Benefits Section */
 #benefits h2 {
-    color: white;
     font-size: 2.5rem;
     padding-bottom: 1.5em;
 }
@@ -335,7 +332,6 @@ main {
 #benefits .btn {
     padding: .5em 3em;
     background-color: var(--bg-color);
-    color: white;
     letter-spacing: .2em;
     font-weight: 600;
 }
@@ -358,8 +354,31 @@ main {
 }
 
 /* About us section */
-#about-us {
-    
+#about-us h2 {
+    font-size: 3rem;
+    color: var(--bg-color);
+}
+
+#about-us .circle-img {
+    margin: 0;
+}
+
+.relative {
+    position: relative;
+}
+
+.big-quotate {
+    position: absolute;
+    top: 0;
+    left: 150px;
+    color: var(--bg-color);
+    font-size: 5rem;
+}
+
+#about-us .text-img {
+    color: var(--bg-color);
+    font-size: 1.8rem;
+    padding: 18px 0;
 }
 
 @media screen and (min-width: 768px) {
@@ -367,8 +386,12 @@ main {
         flex-direction: row;
     }
 
+    #about-us .col:first-child {
+        width: calc(70% - 2rem);
+    }
+
     #about-us .col:last-child {
-        width: 75%;
+        width: 30%;
     }
 }
 
@@ -381,5 +404,4 @@ main {
 /* FOOTER */
 footer {
     background-color: black;
-    color: white;
 }
