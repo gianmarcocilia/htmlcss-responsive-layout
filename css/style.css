@@ -272,6 +272,7 @@ main {
 #testimonials .col {
     color: white;
     padding: 2em 1em;
+    background-color: var(--bg-color);
 }
 
 #testimonials img {
@@ -300,20 +301,7 @@ main {
 
     #testimonials .col img {
         margin-right: 25px;
-    }
-    
-}
-
-/* object-fit: cover */
-
-#testimonials .col {
-    background-color: var(--bg-color);
-    /* Debug */
-    min-height: 200px;
-}
-
-#testimonials .col:first-child {
-    background-color: white;
+    }   
 }
 
 /* Benefits Section */
