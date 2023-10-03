@@ -54,6 +54,10 @@ a {
     background-color: var(--bg-color);
 }
 
+.main-section {
+    padding: calc(var(--header-height) + 1rem) 0;
+}
+
 .common-padding {
     padding: 3rem 0;
 }
@@ -130,7 +134,7 @@ header {
 
 /* MAIN */
 main {
-    padding-top: calc(var(--header-height) + 3rem);
+    margin-top:calc(var(--header-height) + 2rem);
 }
 
 .row {
@@ -396,12 +400,51 @@ main {
 }
 
 /* Get started section */
-#get-started {
-    /* Debug */
-    min-height: 500px;
+#get-started .container {
+    width: 80%;
+    max-width: 600px;
+}
+
+#get-started span {
+    filter: opacity(.5);
+    font-size: 1.2rem;
+    letter-spacing: .2em;
+}
+
+#get-started h3 {
+    font-size: 2rem;
+    padding: 1em;
+}
+
+#get-started h2 {
+    font-size: 3rem;
+    color: orange;
+}
+
+#get-started .btn-large {
+    margin: 0 auto;
+    color: var(--bg-color);
+    background-color: white;
+    font-size: 1.2rem;
+    letter-spacing: .2em;
+    padding: 1em 3em;
+}
+
+#get-started a {
+    text-decoration: underline;
 }
 
 /* FOOTER */
 footer {
     background-color: black;
+}
+
+footer .container {
+    width: 80%;
+    max-width: 500px;
+}
+
+footer a {
+    text-decoration: underline;
+    color: var(--bg-color);
 }
