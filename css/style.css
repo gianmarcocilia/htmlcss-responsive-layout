@@ -39,6 +39,7 @@ a {
     padding: .5em 1em;
     border-radius: 2em;
     display: block;
+    width: fit-content;
 }
 
 .text-center {
@@ -156,7 +157,6 @@ main {
     color: white;
     padding: .5em 3em;
     letter-spacing: .3em;
-    width: fit-content;
     margin-bottom: 2em;
 }
 
@@ -305,14 +305,39 @@ main {
 }
 
 /* Benefits Section */
-#benefits {
-    
+#benefits h2 {
+    color: white;
+    font-size: 2.5rem;
+    padding-bottom: 1.5em;
+}
+
+#benefits .number {
+    color: var(--bg-color);
+    font-size: 3rem;
+    padding-bottom: 25px;
+}
+
+#benefits h3 {
+    color: var(--bg-color);
+    font-size: 2rem;
 }
 
 #benefits .col {
+    padding: 2rem;
     background-color: white;
-    /* Debug */
-    min-height: 300px;
+    text-align: left;
+}
+
+#benefits .col p {
+    padding: 25px 0;
+}
+
+#benefits .btn {
+    padding: .5em 3em;
+    background-color: var(--bg-color);
+    color: white;
+    letter-spacing: .2em;
+    font-weight: 600;
 }
 
 @media screen and (min-width: 768px) {
