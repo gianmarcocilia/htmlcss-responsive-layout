@@ -19,6 +19,10 @@ img {
     display: block;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 /* BODY */
 body {
     font-family: 'PT Sans', sans-serif;
@@ -68,10 +72,6 @@ a {
     width: 200px;
     border-radius: 50%;
     object-fit: cover;
-}
-
-.common-line-height {
-    line-height: 1.8em;
 }
 
 /* HEADER */
@@ -135,6 +135,10 @@ header {
 /* MAIN */
 main {
     margin-top:calc(var(--header-height) + 2rem);
+}
+
+main p {
+    line-height: 2;
 }
 
 .row {
@@ -222,7 +226,6 @@ main {
 
 #planning p {
     padding: 2em 0;
-    line-height: 1.5em;
 }
 
 #planning .col:last-child {
@@ -287,7 +290,6 @@ main {
 
 #testimonials .col p {
     padding: 1.5em 0;
-    line-height: 2rem;
 }
 
 #testimonials h3 {
@@ -383,6 +385,7 @@ main {
     color: var(--bg-color);
     font-size: 1.8rem;
     padding: 18px 0;
+    line-height: 1.4;
 }
 
 @media screen and (min-width: 768px) {
